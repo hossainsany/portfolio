@@ -1,4 +1,5 @@
-import { Button } from '#/components/ui/button'
+import { About } from '@/components/About'
+import { Hero } from '@/components/Hero'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({ component: App })
@@ -6,7 +7,8 @@ export const Route = createFileRoute('/')({ component: App })
 function App() {
   return (
     <>
-      hello <Button>World</Button>
+      <Hero />
+      {/* <About /> */}
     </>
   )
 }
