@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
@@ -17,14 +17,14 @@
 }
 
 :root {
-  --background: #0f172a;
-  --secondary-background: #091328;
+  --background: oklch(16.82% 0.037 267.41);
+  --secondary-background: oklch(19.12% 0.042 266.06);
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: #6366f1;
+  --primary: oklch(58.54% 0.204 277.12);
   --primary-foreground: oklch(0.977 0.014 308.299);
   --secondary: oklch(0.967 0.001 286.375);
   --secondary-foreground: oklch(0.21 0.006 285.885);
@@ -53,14 +53,14 @@
 }
 
 .dark {
-  --background: #0f172a;
-  --secondary-background: #091328;
+  --background: oklch(16.82% 0.037 267.41);
+  --secondary-background: oklch(19.12% 0.042 266.06);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.21 0.006 285.885);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.21 0.006 285.885);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: #6366f1;
+  --primary: oklch(58.54% 0.204 277.12);
   --primary-foreground: oklch(0.977 0.014 308.299);
   --secondary: oklch(0.274 0.006 286.033);
   --secondary-foreground: oklch(0.985 0 0);
@@ -88,6 +88,7 @@
 }
 
 @theme inline {
+  --font-mono: 'JetBrains Mono', monospace;
   --font-sans: 'Inter Variable', sans-serif;
   --font-heading: 'Space Grotesk Variable', sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
@@ -121,6 +122,7 @@
   --color-card: var(--card);
   --color-foreground: var(--foreground);
   --color-background: var(--background);
+  --color-secondary-background: var(--secondary-background);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
